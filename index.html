@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
       rel="stylesheet"
@@ -16,16 +22,73 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              primaryColor: "#FFDC26",
+              blackColor: "#111111",
             },
           },
         },
       };
     </script>
+    <script
+      src="https://kit.fontawesome.com/d5a55f1c3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .font-sora {
+        font-family: "Sora", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <button class="btn btn-primary">Primary</button>
+  <body class="font-sora text-blackColor">
+    <header class="bg-[#FFF9F4]">
+      <div class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-0">
+        <nav class="py-6 flex justify-between items-center">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo-header.png" alt="" />
+            <h1 class="hidden lg:block lg:text-2xl">
+              Browse<span class="text-primaryColor">4</span>Pets
+            </h1>
+          </div>
+          <!-- Link Section -->
+          <ul class="hidden lg:text-xl lg:flex lg:items-center lg:gap-8">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+          <!-- Icons and Buttons Section -->
+          <div class="hidden lg:flex lg:gap-4 lg:items-center">
+            <i class="fa-regular fa-bell text-xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <button
+              class="py-2 px-7 border border-primaryColor rounded-lg text-xl hover:bg-primaryColor hover:text-[#FFFFFF]"
+            >
+              Login
+            </button>
+            <button
+              class="py-2 px-7 border-none bg-primaryColor rounded-lg text-xl hover:bg-yellow-400 hover:text-[#FFFFFF]"
+            >
+              Register
+            </button>
+          </div>
+          <!-- Bar Icon-->
+
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <i class="lg:hidden fa-solid fa-bars text-xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-2 shadow right-1"
+            >
+              <li><a href="">Find a pet</a></li>
+              <li><a href="">Breeds</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Hero Section -->
+      </div>
     </header>
     <main></main>
     <footer></footer>
