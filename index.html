@@ -30,6 +30,7 @@
             colors: {
               primaryColor: "#FFDC26",
               blackColor: "#111111",
+              cardColor: "#F9DF8A",
             },
           },
         },
@@ -49,7 +50,7 @@
     </style>
   </head>
   <body class="font-sora text-blackColor">
-    <header class="min-h-screen">
+    <header class="">
       <div class="bg-[#FFF9F4]">
         <div class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-5">
           <nav class="py-6 flex justify-between items-center">
@@ -139,7 +140,80 @@
         </div>
       </div>
     </header>
-    <main class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-0"></main>
+    <main class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-0">
+      <!-- Browse By Categories -->
+      <section class="py-14 lg:py-36">
+        <!-- Section Title -->
+        <h1 class="font-adlam text-2xl lg:text-4xl mb-8 lg:mb-12">
+          Browse By Categories
+        </h1>
+        <!-- Card Section -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-6"
+        >
+          <!-- Card 1-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/dog-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Dog</p>
+            <small class="text-sm lg:text-base">3 items </small>
+          </div>
+          <!-- Card 2-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/fish-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Fish</p>
+            <small class="text-sm lg:text-base">3 items </small>
+          </div>
+          <!-- Card 3-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/cat-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Cat</p>
+            <small class="text-sm lg:text-base">3 items </small>
+          </div>
+          <!-- Card 4-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/bird-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Birds</p>
+            <small class="text-sm lg:text-base">3 items </small>
+          </div>
+          <!-- Card 5-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/mouse-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Small Pet</p>
+            <small class="text-sm lg:text-base">3 items </small>
+          </div>
+          <!-- Card 6-->
+          <div
+            class="bg-cardColor rounded-xl flex flex-col items-center py-8 px-12"
+          >
+            <div class="bg-[#FFFFFF] w-[104px] rounded-full mb-6">
+              <img src="./assets/rabbit-cartoon.png" alt="" class="p-7" />
+            </div>
+            <p class="pb-3 font-adlam text-lg lg:text-xl">Rabbit</p>
+            <small class="text-sm lg:text-base">2 items </small>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
