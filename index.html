@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
       rel="stylesheet"
@@ -37,72 +43,103 @@
       .font-sora {
         font-family: "Sora", sans-serif;
       }
+      .font-adlam {
+        font-family: "ADLaM Display", system-ui;
+      }
     </style>
   </head>
   <body class="font-sora text-blackColor">
-    <header class="bg-[#FFF9F4]">
-      <div class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-0">
-        <nav class="py-6 flex justify-between items-center">
-          <!-- Logo Section -->
-          <div class="flex items-center gap-3">
-            <img src="./assets/logo-header.png" alt="" />
-            <h1 class="hidden lg:block lg:text-2xl">
-              Browse<span class="text-primaryColor">4</span>Pets
-            </h1>
-          </div>
-          <!-- Link Section -->
-          <ul class="hidden lg:text-xl lg:flex lg:items-center lg:gap-8">
-            <li
-              class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
-            >
-              <a href="">Find a pet</a>
-            </li>
-            <li
-              class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
-            >
-              <a href="">Breeds</a>
-            </li>
-            <li
-              class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
-            >
-              <a href="">Contact us</a>
-            </li>
-          </ul>
-          <!-- Icons and Buttons Section -->
-          <div class="hidden lg:flex lg:gap-4 lg:items-center">
-            <i class="fa-regular fa-bell text-xl"></i>
-            <i class="fa-solid fa-magnifying-glass text-xl"></i>
-            <button
-              class="py-2 px-7 border border-primaryColor rounded-lg text-xl hover:bg-primaryColor hover:text-[#FFFFFF]"
-            >
-              Login
-            </button>
-            <button
-              class="py-2 px-7 border-none bg-primaryColor rounded-lg text-xl hover:text-[#FFFFFF]"
-            >
-              Register
-            </button>
-          </div>
-          <!-- Bar Icon-->
-
-          <div class="dropdown lg:hidden">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <i class="lg:hidden fa-solid fa-bars text-xl"></i>
+    <header class="min-h-screen">
+      <div class="bg-[#FFF9F4]">
+        <div class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-5">
+          <nav class="py-6 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-3">
+              <img src="./assets/logo-header.png" alt="" />
+              <h1 class="hidden lg:block lg:text-2xl">
+                Browse<span class="text-primaryColor">4</span>Pets
+              </h1>
             </div>
+            <!-- Link Section -->
             <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-2 shadow right-1"
+              class="hidden lg:text-lg xl:text-xl lg:flex lg:items-center lg:gap-8"
             >
-              <li><a href="">Find a pet</a></li>
-              <li><a href="">Breeds</a></li>
-              <li><a href="">Contact us</a></li>
+              <li
+                class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
+              >
+                <a href="">Find a pet</a>
+              </li>
+              <li
+                class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
+              >
+                <a href="">Breeds</a>
+              </li>
+              <li
+                class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:transition-[width] after:duration-500 after:ease-in-out after:bg-primaryColor hover:after:w-full"
+              >
+                <a href="">Contact us</a>
+              </li>
             </ul>
+            <!-- Icons and Buttons Section -->
+            <div class="hidden lg:flex lg:gap-4 lg:items-center">
+              <i class="fa-regular fa-bell text-xl"></i>
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+              <button
+                class="py-2 px-7 border border-primaryColor rounded-lg text-xl hover:bg-primaryColor hover:text-[#FFFFFF]"
+              >
+                Login
+              </button>
+              <button
+                class="py-2 px-7 border-none bg-primaryColor rounded-lg text-xl hover:text-[#FFFFFF]"
+              >
+                Register
+              </button>
+            </div>
+            <!-- Bar Icon-->
+
+            <div class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <i class="lg:hidden fa-solid fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-2 shadow right-1"
+              >
+                <li><a href="">Find a pet</a></li>
+                <li><a href="">Breeds</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-5">
+        <div
+          class="pt-24 bg-[url('./assets/cat-big.png')] h-[550px] lg:h-[750px] bg-no-repeat w-full bg-contain bg-bottom"
+        >
+          <!-- Text Section -->
+          <div class="w-[320px] lg:w-3/4">
+            <h1 class="font-adlam text-3xl lg:text-5xl xl:text-6xl mb-4">
+              Pamper Your <span class="text-primaryColor"> Pet,</span> <br />
+              <span class="text-primaryColor">Because</span> They Deserve <br />
+              the Best
+            </h1>
+            <p class="text-base lg:text-xl lg:leading-9 pb-6 lg:w-[670px]">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button
+              class="py-2 px-7 border-none bg-primaryColor rounded-lg text-xl hover:text-[#FFFFFF] hover:font-bold"
+            >
+              Find a pet
+            </button>
           </div>
-        </nav>
-        <!-- Hero Section -->
+        </div>
       </div>
     </header>
-    <main></main>
+    <main class="max-w-screen-xl mx-auto px-3 md:px-14 lg:px-0"></main>
     <footer></footer>
   </body>
 </html>
